@@ -1,0 +1,173 @@
+:root {background-color: whitesmoke;}
+
+nav {
+    background-image: url('./banner.jpg');
+    background-position: center center;
+    border-radius: 50%;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0%;
+    padding: 2em;
+    max-height: 10;
+}
+
+.navigation li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+.navigation li a.unos{animation: green 15s infinite ease-in-out;}
+.navigation li a.dos{animation: red 15s infinite ease-in-out;}
+.navigation li a.tres{animation: yellow 15s infinite ease-in-out;}
+
+.banner {width: 100%;}
+
+.container {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 79vh;
+}
+
+.ball {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: fixed;
+}
+
+.ball.one {animation: green 15s infinite ease-in-out;}
+
+@keyframes green {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+    
+    75% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+.ball.two {animation: red 15s infinite ease-in-out;}
+
+@keyframes red {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+    
+    75% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+.ball.three {animation: yellow 15s infinite ease-in-out;}
+
+@keyframes yellow {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+    
+    75% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    z-index: -10;
+}
+
+.footer p {
+    font-size: 3em;
+    letter-spacing: 2px;
+    font-family: 'Reenie Beanie', cursive;
+    margin: 0;
+    color: sandybrown;
+}
+
+@media screen and (orientation:portrait) and  (min-width: 768px) {
+    .navigation li a {
+        font-size: 2em;
+        letter-spacing: 5px;
+    }
+
+    .ball {
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+    }
+
+    .footer p {
+        font-size: 4em;
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (orientation:landscape) and (min-width: 1024px) {
+    .navigation li a {
+        font-size: 3.5em;
+        letter-spacing: 5px;
+    }
+
+    .ball {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+    }
+
+    .footer p {
+        font-size: 3em;
+        letter-spacing: 5px;
+    }
+}
